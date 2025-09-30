@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Kontainer utama untuk kartu kalkulator -->
+    <div class="card-container">
+        
+        <!-- Header Kartu -->
+        <div class="card-header">
+            <h1>Discount Calculator</h1>
+            <p>🎉 Get a 10% discount on purchases over Rp100,000!</p>
+        </div>
+
+        <!-- Form Input -->
+        <div>
+            <label for="harga-pembelian" class="form-label">Enter Purchase Price (Rp)</label>
+            <div class="input-group">
+                <span class="input-currency-symbol">
+                    Rp
+                </span>
+                <input type="number" id="harga-pembelian">
+            </div>
+        </div>
+
+        <!-- Garis Pemisah -->
+        <hr>
+
+        <!-- Hasil Kalkulasi -->
+        <div class="result-group">
+            <div class="result-row">
+                <span>Initial price</span>
+                <span id="harga-awal" class="result-value">Rp 0</span>
+            </div>
+            <div class="result-row">
+                <span>Discount received</span>
+                <span id="diskon" class="result-value">0%</span>
+            </div>
+             <!-- Elemen HTML baru yang ditambahkan -->
+            <div class="result-row">
+                <span class="result-label">Price cut</span>
+                <span class="result-value" id="potonganHarga">Rp 0</span>
+            </div>
+            <div class="total-row">
+                <span>Total Payment</span>
+                <span id="total-bayar">Rp 0</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

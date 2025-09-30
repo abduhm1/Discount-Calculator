@@ -1,0 +1,137 @@
+        /* CSS Reset dan Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* bg-gray-100 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        /* Style tambahan untuk input number agar tidak menampilkan panah atas/bawah */
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        /* Main Container/Card */
+        .card-container {
+            width: 100%;
+            max-width: 28rem; /* max-w-md */
+            background-color: #ffffff; /* bg-white */
+            border-radius: 1rem; /* rounded-2xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* shadow-lg */
+            padding: 2rem; /* p-8 */
+            transition: box-shadow 0.3s ease-in-out; /* transition-all */
+        }
+        .card-container:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); /* hover:shadow-2xl */
+        }
+
+        /* Header */
+        .card-header {
+            text-align: center;
+            margin-bottom: 2rem; /* mb-8 */
+        }
+        .card-header h1 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* text-gray-800 */
+            margin: 0;
+        }
+        .card-header p {
+            color: #6b7280; /* text-gray-500 */
+            margin-top: 0.5rem; /* mt-2 */
+        }
+        
+        /* Form Input */
+        .form-label {
+            display: block;
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 500; /* font-medium */
+            color: #374151; /* text-gray-700 */
+            margin-bottom: 0.5rem; /* mb-2 */
+        }
+        .input-group {
+            position: relative;
+        }
+        .input-currency-symbol {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding-left: 0.75rem; /* pl-3 */
+            color: #6b7280; /* text-gray-500 */
+        }
+        #harga-pembelian {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.25rem; /* pl-9 pr-4 py-3 */
+            border: 1px solid #d1d5db; /* border border-gray-300 */
+            border-radius: 0.5rem; /* rounded-lg */
+            transition: box-shadow 0.2s, border-color 0.2s;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+        }
+        #harga-pembelian:focus {
+            outline: none;
+            border-color: #4f46e5; /* focus:border-indigo-500 */
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* focus:ring-2 focus:ring-indigo-500 */
+        }
+
+        /* Separator */
+        hr {
+            margin: 2rem 0; /* my-8 */
+            border: 0;
+            border-top: 1px solid #e5e7eb; /* border-gray-200 */
+        }
+        
+        /* Result Section */
+        .result-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; /* space-y-4 */
+        }
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #4b5563; /* text-gray-600 */
+        }
+        .result-label {
+             /* Class for new element */
+             color: #4b5563;
+        }
+        .result-value {
+            font-weight: 500; /* font-medium */
+            color: #1f2937; /* text-gray-800 */
+        }
+        #diskon {
+            padding: 0.25rem 0.5rem; /* px-2 py-1 */
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.875rem; /* text-sm */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .total-row {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            color: #1f2937; /* text-gray-800 */
+            padding-top: 1rem; /* pt-4 */
+            border-top: 2px dashed #d1d5db; /* border-t-2 border-dashed */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .total-row span {
+             color: #4f46e5; /* text-indigo-600 */
+        }
